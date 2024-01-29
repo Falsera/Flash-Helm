@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 public class FlashHelm implements ModInitializer {
 	public static final String MOD_ID = "flashehelm";
+	// dette er en kommentar. Ali er en pikk
     public static final Logger LOGGER = LoggerFactory.getLogger("flashhelm");
 
 	@Override
