@@ -15,22 +15,13 @@ import net.minecraft.util.Identifier;
 public class  ModItems {
     public static final Item FLASHLIGHT = registerItem("flashlight", new Item(new FabricItemSettings().maxCount(1)));
     public static final Item TACHELM = registerItem("tachelm", new Item(new FabricItemSettings().maxCount(1)));
+    public static final Item LITHIUM_INGOT = registerItem("lithium_ingot", new Item(new FabricItemSettings()));
 
 
-    private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
-       entries.add(TACHELM);
-
-    }
-    private static void addItemsToToolsItemGroup(FabricItemGroupEntries entries){
-        entries.add(FLASHLIGHT);
-    }
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(FlashHelm.MOD_ID, name), item);
     }
     public static void registerModItems(){
-        FlashHelm.LOGGER.info("Registering Mod Items for " + FlashHelm.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsItemGroup);
-        FlashHelm.LOGGER.info("Registering Mod Items for " + FlashHelm.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatItemGroup);
+
     }
 }

@@ -1,6 +1,8 @@
 {
   "item.flashhelm.flashlight": "Flashlight",
   "item.flashhelm.tachelm": "Tachelm",
+  "item.flashhelm.lithium_ingot": "Lithium Ingot",
+  "block.flashhelm.lithium_ore": "Lithium Ore",
 
   "itemgroup.tachelm": "Tactical Helmet"
 }

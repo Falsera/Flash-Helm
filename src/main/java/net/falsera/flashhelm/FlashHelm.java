@@ -3,6 +3,7 @@ package net.falsera.flashhelm;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.falsera.flashhelm.block.ModBlocks;
 import net.falsera.flashhelm.item.ModItemGroups;
 import net.falsera.flashhelm.item.ModItems;
 import net.minecraft.item.ItemStack;
@@ -19,6 +20,7 @@ public class FlashHelm implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModItemGroups.RegisterItemGroups();
+		ModBlocks.registerModBlocks();
 	}
 
 }

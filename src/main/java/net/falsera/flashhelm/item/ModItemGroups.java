@@ -2,6 +2,7 @@ package net.falsera.flashhelm.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.falsera.flashhelm.FlashHelm;
+import net.falsera.flashhelm.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -15,6 +16,9 @@ public class ModItemGroups {
                     .icon(()-> new ItemStack(ModItems.TACHELM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.TACHELM);
                         entries.add(ModItems.FLASHLIGHT);
+                        entries.add(ModItems.LITHIUM_INGOT);
+                        entries.add(ModBlocks.LITHIUM_ORE);
+
                     }).build());
     public static void RegisterItemGroups(){
         FlashHelm.LOGGER.info("Registering Item Groups for " + FlashHelm.MOD_ID);
